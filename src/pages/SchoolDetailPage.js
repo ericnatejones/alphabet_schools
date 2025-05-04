@@ -224,34 +224,57 @@ const InstructorsList = styled.div`
 
 const InstructorCard = styled.div`
   display: flex;
-  gap: var(--spacing-md);
+  align-items: center;
+  padding: var(--spacing-sm);
+  background-color: var(--surface);
+  border-radius: var(--border-radius-md);
 `;
 
 const InstructorAvatar = styled.div`
-  width: 60px;
-  height: 60px;
-  border-radius: var(--border-radius-circle);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: var(--primary);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: 600;
   font-size: 1.2rem;
+  margin-right: var(--spacing-sm);
 `;
 
 const InstructorInfo = styled.div`
-  flex: 1;
+  display: flex;
+  flex-direction: column;
 `;
 
 const InstructorName = styled.div`
   font-weight: 600;
-  margin-bottom: 5px;
 `;
 
-const InstructorBio = styled.div`
+const InstructorRole = styled.div`
   font-size: 0.9rem;
   color: var(--text-secondary);
+`;
+
+const RelatedSchoolsList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+`;
+
+const RelatedSchoolItem = styled(Link)`
+  padding: var(--spacing-sm);
+  background-color: var(--surface);
+  border-radius: var(--border-radius-md);
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  
+  &:hover {
+    background-color: var(--primary);
+    color: white;
+  }
 `;
 
 const SchoolDetailPage = () => {
