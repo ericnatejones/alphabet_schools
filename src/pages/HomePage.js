@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 // Components
 const fadeIn = keyframes`
